@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Cia Teatral Maktub</title>
+
+	<!-- Mobile First -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Make all browsers render html5 elements -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+	<!-- Simple Grid -->
+	<link rel="stylesheet" type="text/css" href="css/simplegrid.css">
+
+	<!-- My CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- Map JS -->
+	<script type="text/javascript" src="js/map.js"></script>
+
+	<!-- Font -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700,500">
+
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+	<!--JQuery  -->
+	<script src="js/jquery.min.js"></script>
+
+</head>
+<body>
+
+	<header>
+  		<div class="videoContainer">
+  			<video autoplay loop>
+    			<source src="video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+    			<source src="video/video.webm" type='video/webm; codecs="vp8, vorbis"' />
+    			Video not supported.
+  			</video>
+		</div>
+
+		<a href="#" class="logo"></a>
+		<nav>
+			<ul>
+				<li><a href="#header">Home</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#team">Our Team</a></li>
+				<li><a href="#map">Map</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="title">
+			<h1>Cia Teatral Maktub.</h1>
+			<h2>Vestibulum nec vestibulum massa, vitae pellentesque risus. Aliquam in ante mauris.</h2>
+			<a href="#about"><i class="fa fa-angle-double-down fa-fw fa-4x" aria-hidden="true"></i></a>
+		</div>
+	</header>
+	
+	<section class="about" id="about">	
+		<div class="grid grid-pad">
+			<div class="col-1-1">
+				<h1>About Us</h1>
+				<span>Lorem ipsum Ea ut et est culpa aute dolore dolore cupidatat dolore sit irure in sed in nulla sint aliquip culpa do consectetur voluptate et ad nostrud veniam dolor adipisicing cupidatat eiusmod ut laboris Excepteur, Lorem ipsum Anim cupidatat ullamco sunt. Lorem ipsum Pariatur irure ut officia adipisicing quis Excepteur sed voluptate nulla sit in id esse dolore laborum do consectetur eiusmod.
+				</span>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg first">
+		<h2>Lorem ipsum Proident Ut ut eu qui esse et proident nostrud proident tempor.</h2>
+	</section>
+
+	<section class="team" id="team">
+		<div class="grid grid-pad">
+			<h1>Our Team</h1>
+			<img src="img/team.jpg">
+		</div>
+	</section>
+
+	<section class="bg second">
+		<h2>Lorem ipsum Proident Ut ut eu qui esse et proident nostrud proident tempor.</h2>
+	</section>
+
+	<section class="contact" id="contact">
+		<div class="grid grid-pad">
+			<div class="col-1-2 form">
+				<h1>Contact</h1>
+				<form id="frmContato" type="post" action="enviaContato.php">
+					<div class="form-input">
+                		<i class="fa fa-user fa-fw fa-2x"></i>
+                		<input class="input" name="txtNome" type="text" placeholder="Nome" required="required">
+                	</div>
+                	<div class="form-input">
+                		<i class="fa fa-pencil-square-o fa-fw fa-2x" aria-hidden="true"></i>
+                		<input class="input" name="txtAssunto" type="text" placeholder="Assunto" required="required">
+                	</div>
+                	<div class="form-input">
+                		<i class="fa fa-envelope-o fa-fw fa-2x"></i>
+                		<input class="input" name="txtEmail" type="email" placeholder="Email" required="required">
+                	</div>
+                	<div class="form-input">
+                		<i class="fa fa-pencil fa-fw fa-2x"></i>
+                		<textarea class="input" rows="5" name="txtMsg" type="text" placeholder="Insira sua Mensagem Aqui!" required="required"></textarea>
+                	</div>
+
+                	<button class="btn" type="submit">Enviar</button>
+            	</form>
+            </div>
+            <div class="col-1-2">
+            	<div id="map"></div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<span>Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://github.com/gstvribs" class="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> gstvribs</a></span>
+	</footer>
+
+
+	<!-- Maps -->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADF7Xafh-11NhnEJcOIy87JgTEpKgjOno&callback=initMap">
+    </script>
+
+    <!-- Smooth Scrolling -->
+    <script type="text/javascript">
+	$(function() {
+	  $('a[href*="#"]:not([href="#"])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html, body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});   		
+	</script>
+</body>
+</html>
