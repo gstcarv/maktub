@@ -137,16 +137,72 @@ header{
 .team{
 	color: $corTitleSection;
 	background-color: $corBackground;
-	padding-bottom: 3%;
-	div{
-		display: flex;
-    	justify-content: center;
-    	align-items: center;
-    	flex-direction: column;
-		img{
-			width: 70%;
-		}		
-	}
+	padding: 2%;
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    #slides {
+      display: none;
+      img{
+      	max-width: 100%;
+      }
+    }
+
+    #slides .slidesjs-navigation {
+      margin-top:3px;
+    }
+
+    #slides .slidesjs-previous {
+      margin-right: 5px;
+      float: left;
+    }
+
+    #slides .slidesjs-next {
+      margin-right: 5px;
+      float: left;
+    }
+
+    .slidesjs-pagination {
+      margin: 6px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(img/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
 }
 
 .contact{
@@ -189,18 +245,11 @@ footer{
 		transition: all 0.3s ease;
 	}
 }
-//Menu Responsivo
-@media all and(max-width: 800px){
-	.team{
-		display: flex;
-    	justify-content: center;
-    	align-items: center;
-    	flex-direction: column;
-	}
-}
 
+/* Menu Responsivo */
 @media all and(max-width: 600px){
 	ul{
+		display: flex;
 		flex-direction: column;
 		align-items: center;
 		flex-grow: 1;
