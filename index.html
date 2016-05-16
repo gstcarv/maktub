@@ -1,10 +1,10 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 	
 	<title>Cia Teatral Maktub</title>
-
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 
 	<!-- Mobile First -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,35 +30,108 @@
 	<!--JQuery  -->
 	<script src="js/jquery.min.js"></script>
 
+	<!-- Slider -->
+	<script src="js/jquery.slides.min.js"></script>
+
+	<script type="text/javascript">
+		function pecas(peca) {
+			document.getElementById("primeiraPeca").style.display = "none";
+			document.getElementById("segundaPeca").style.display = "none";
+			document.getElementById("terceiraPeca").style.display = "none";
+			document.getElementById("quartaPeca").style.display = "none";
+
+			switch(peca) {
+				case 1: 
+					document.getElementById("primeiraPeca").style.display = "block";
+					 $(function(){
+			     		 $("#pec1").slidesjs({
+			        	width: 890,
+					    height: 528,
+			        	navigation: false,
+			        	play: {
+			          		active: true,
+			          		auto: true,
+			          		interval: 4000,
+			          		swap: true
+			        	}
+			      		});
+			    	});
+					break;
+				case 2: 
+					document.getElementById("segundaPeca").style.display = "block";
+					$(function(){
+			     		 $("#pec2").slidesjs({
+			        	width: 890,
+					    height: 528,
+			        	navigation: false,
+			        	play: {
+			          		active: true,
+			          		auto: true,
+			          		interval: 4000,
+			          		swap: true
+			        	}
+			      		});
+			    	});
+					break;
+				case 3: 
+					document.getElementById("terceiraPeca").style.display = "block";
+					$(function(){
+			     		 $("#pec3").slidesjs({
+			        	width: 890,
+					    height: 528,
+			        	navigation: false,
+			        	play: {
+			          		active: true,
+			          		auto: true,
+			          		interval: 4000,
+			          		swap: true
+			        	}
+			      		});
+			    	});
+					break;
+				case 4: 
+					document.getElementById("quartaPeca").style.display = "block";
+					$(function(){
+			     		 $("#pec4").slidesjs({
+			        	width: 890,
+					    height: 528,
+			        	navigation: false,
+			        	play: {
+			          		active: true,
+			          		auto: true,
+			          		interval: 4000,
+			          		swap: true
+			        	}
+			      		});
+			    	});
+					break;
+			}
+
+		}
+	</script>
+
 </head>
 <body>
 
 	<header>
   		<div class="videoContainer">
   			<video autoplay loop>
-    			<source src="video/MAKTUB-VIDEO.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-    			<source src="video/MAKTUB-VIDEO.webm" type='video/webm; codecs="vp8, vorbis"'>
+    			<source src="video/v2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
     			Video not supported.
   			</video>
 		</div>
 
-		<!--<a href="#" class="logo"></a>-->
+		<a href="#" class="logo"></a>
 		<nav>
 			<ul>
-				<li><a href="#header">Home</a></li>
 				<li><a href="#about">Sobre Nós</a></li>
-				<li><a href="#team">Our Team</a></li>
-				<li><a href="#map">Map</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a href="#team">Fotos</a></li>
+				<li><a href="#contact">Contato</a></li>
 			</ul>
 		</nav>
 		<div class="title">
-			<span style="font-size: 60px;font-family: 'Segoe Print';text-align: left">
-			Já estava escrito ...
-			<img src="img/logo.png">
-			<br>
-			... tinha que acontecer!
-			</span>
+			<h1>Cia Teatral Maktub</h1>
+			<h2>Breve Descrição...</h2>
 			<a href="#about"><i class="fa fa-angle-double-down fa-fw fa-4x" aria-hidden="true"></i></a>
 		</div>
 	</header>
@@ -66,32 +139,143 @@
 	<section class="about" id="about">	
 		<div class="grid grid-pad">
 			<div class="col-1-1">
-				<h1 style="font-family: 'Segoe Print'">Sobre Nós</h1>
-				<span style="font-family: 'Segoe Print';font-size: 18px;text-align: justify">
-					<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fundada oficialmente no dia 27 de março de 1998, a história da Cia. Teatral Maktub começou muito antes. De um grupo de pesquisa passou a oficina de iniciação teatral e por fim a  concretização da formação do grupo. O grande idealizador da companhia foi o diretor Moisés Allon, nome muito conhecido nos meios artísticos de Sumaré. Um dos principais objetivos da companhia é dar oportunidade a quem tem vontade de fazer teatro, característica que destaca o trabalho de iniciação teatral que influencia e tem grande relevância. Hoje, a Cia Teatral Maktub é a mais antiga e ativa companhia de teatro da cidade com papel importante na cultura do município. Difícil conhecer um morador que não tenha participado, conhecido algum integrante ou que não conheça o grupo ou sua história.</P>
-					
-					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A principal característica do grupo é a linguagem realista, é simples, coloquial e objetiva, com o intuito de demostrar a realidade tal qual ela é. O trabalho dos atores baseia-se nos temas mais recorrentes ligados ao cotidiano, as fraquezas humanas, e também, aos problemas de ordem social. De tal modo, centrado nesses aspectos, o grupo demostra as diversas facetas do cotidiano e também dos seres humanos, desde os problemas sociais, financeiros, amorosos, familiares, tal qual a falsidade, a impotência, o egoísmo, os conflitos psicológicos, etc. O foco principal é revelar as mazelas da sociedade e das profundezas do ser humano.</p>
+				<h1>Sobre Nós</h1>
+				<p>Fundada oficialmente no dia 27 de março de 1998, a história da Cia. Teatral Maktub começou muito antes. De um grupo de pesquisa passou a oficina de iniciação teatral e por fim a concretização da formação do grupo. O grande idealizador da companhia foi o diretor Moisés Allon, nome muito conhecido nos meios artísticos de Sumaré. Um dos principais objetivos da companhia é dar oportunidade a quem tem vontade de fazer teatro, característica que destaca o trabalho de iniciação teatral que influencia e tem grande relevância. Hoje, a Cia Teatral Maktub é a mais antiga e ativa companhia de teatro da cidade com papel importante na cultura do município. Difícil conhecer um morador que não tenha participado, conhecido algum integrante ou que não conheça o grupo ou sua história.</p>
 
-					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A primeira montagem “ Luar em Qualquer cidade” que falava da vida e da obra do escritor Carlos Drummond de Andrade ficou em cartaz por quase oito anos. Foi apresentada em todas as regiões do Estado e recebeu vários prêmios. Entre as montagens de maior sucesso estão: Luar em qualquer Cidade (1998- 2003/ 2008 - 2009), O Grilo e o Vagalume (2004 - 2008), Uma Lição Longe demais (2005 -2008), Paixão de Cristo (2010), Rua da Amargura (2011), O Doce Amargo da Vida (2013 - 2014), Sonhos de um Coração Brejeiro Naufragado De Ilusão (2013 – 2014) Orquídea Negra (2015), A Casa Mágica (2015). </p>
+      			<p>A principal característica do grupo é a linguagem realista, é simples, coloquial e objetiva, com o intuito de demostrar a realidade tal qual ela é. O trabalho dos atores baseia-se nos temas mais recorrentes ligados ao cotidiano, as fraquezas humanas, e também, aos problemas de ordem social. De tal modo, centrado nesses aspectos, o grupo demostra as diversas facetas do cotidiano e também dos seres humanos, desde os problemas sociais, financeiros, amorosos, familiares, tal qual a falsidade, a impotência, o egoísmo, os conflitos psicológicos, etc. O foco principal é revelar as mazelas da sociedade e das profundezas do ser humano.</p>
 
-				</span>
+      			<p>A primeira montagem “ Luar em Qualquer cidade” que falava da vida e da obra do escritor Carlos Drummond de Andrade ficou em cartaz por quase oito anos. Foi apresentada em todas as regiões do Estado e recebeu vários prêmios. Entre as montagens de maior sucesso estão: Luar em qualquer Cidade (1998- 2003/ 2008 - 2009), O Grilo e o Vagalume (2004 - 2008), Uma Lição Longe demais (2005 -2008), Paixão de Cristo (2010), Rua da Amargura (2011), O Doce Amargo da Vida (2013 - 2014), Sonhos de um Coração Brejeiro Naufragado De Ilusão (2013 – 2014) Orquídea Negra (2015), A Casa Mágica (2015).</p>
 			</div>
 		</div>
 	</section>
 
 	<section class="bg first">
-		<h2>Lorem ipsum Proident Ut ut eu qui esse et proident nostrud proident tempor.</h2>
+		<h2>Já estava escrito...</h2>
+	</section>
+
+	<section class="about" id="about">	
+		<div class="grid grid-pad">
+			<div class="col-1-1">
+				<h1>Peças</h1>
+					<table border="0" style="width: 100%">
+						<tr>
+							<td style="width: 50%">
+								<ul>
+									<li><a href="javascript:pecas(1)">Primeira Peça</a></li>
+								
+									<li><a href="javascript:pecas(2)">Uma Lição Longe Demais</a></li>
+								
+									<li><a  href="javascript:pecas(3)">O Grilo e o Vagalume</a></li>
+								
+									<li><a href="javascript:pecas(4)">Auscwitz</a></li>
+								
+									<li><a>Rua da Amargura</a></li>
+									
+									<li><a>O Doce Amargo</a></li>
+								
+									<li><a>Coração Brejeiro</a></li>
+									
+									<li><a>Orquídea Negra</a></li>
+									
+									<li><a>Casa Mágica</a></li>
+									
+									<li><a>Homem é tudo igual</a></li>
+								</ul>
+							</td>
+							<td align="right"> 
+								
+								<div id="primeiraPeca" style="display: none">	
+									<h2 align="center"><i>Primeira Peça</i></h2>
+									<div class="peca" id="pec1">
+										<img src="img/PRIMEIRA-PECA/1.jpg">
+	    								<img src="img/PRIMEIRA-PECA/2.jpg">
+							    		<img src="img/PRIMEIRA-PECA/3.jpg">
+							    		<img src="img/PRIMEIRA-PECA/4.jpg">
+							    		<img src="img/PRIMEIRA-PECA/5.jpg">
+							    		<img src="img/PRIMEIRA-PECA/6.jpg">
+							    		<img src="img/PRIMEIRA-PECA/7.jpg">
+							    		<img src="img/PRIMEIRA-PECA/8.jpg">
+							    		<img src="img/PRIMEIRA-PECA/9.jpg">
+							    		<img src="img/PRIMEIRA-PECA/10.jpg">
+							    		<img src="img/PRIMEIRA-PECA/11.jpg">
+							    		<img src="img/PRIMEIRA-PECA/12.jpg">
+							    		<img src="img/PRIMEIRA-PECA/13.jpg">
+							    		<img src="img/PRIMEIRA-PECA/14.jpg">
+							    	</div>
+							    </div>
+
+							    <div id="segundaPeca" style="display: none">	
+							    	<h2 align="center"><i>Uma Lição Longe Demais</i></h2>
+									<div class="peca" id="pec2">
+										<img src="img/SEGUNDA-PECA/1.jpg">
+	    								<img src="img/SEGUNDA-PECA/2.jpg">
+							    		<img src="img/SEGUNDA-PECA/3.jpg">
+							    		<img src="img/SEGUNDA-PECA/4.jpg">
+							    		<img src="img/SEGUNDA-PECA/5.jpg">
+							    		<img src="img/SEGUNDA-PECA/6.jpg">
+							    		<img src="img/SEGUNDA-PECA/7.jpg">
+							    		<img src="img/SEGUNDA-PECA/8.jpg">
+							    		<img src="img/SEGUNDA-PECA/9.jpg">
+							    		<img src="img/SEGUNDA-PECA/10.png">
+							    	</div>
+							    </div>
+
+							    <div id="terceiraPeca" style="display: none">
+							    	<h2 align="center"><i>O Grilo e o Vagalume</i></h2>	
+									<div class="peca" id="pec3">
+										<img src="img/TERCEIRA-PECA/1.jpg">
+	    								<img src="img/TERCEIRA-PECA/2.png">
+							    		<img src="img/TERCEIRA-PECA/3.jpg">
+							    	</div>
+							    </div>
+
+							    <div id="quartaPeca" style="display: none">	
+							    	<h2 align="center"><i>Auscwitz</i></h2>
+									<div class="peca" id="pec4">
+										<img src="img/QUARTA-PECA/1.jpg">
+	    								<img src="img/QUARTA-PECA/2.jpg">
+							    	</div>
+							    </div>
+							    
+								
+							</td>
+						</tr>
+					</table>
+			</div>
+		</div>
+		<hr>
 	</section>
 
 	<section class="team" id="team">
-		<div class="grid grid-pad">
-			<h1>Our Team</h1>
-			<img src="img/team.jpg">
+		<h1>Fotos</h1>
+		<div class="grid grid-pad" id="slides">
+			<img src="img/1.jpg">
+    		<img src="img/2.jpg">
+    		<img src="img/3.jpg">
+    		<img src="img/4.jpg">
+    		<img src="img/5.jpg">
+    		<img src="img/6.jpg">
+    		<img src="img/7.jpg">
+    		<img src="img/8.jpg">
+    		<img src="img/9.jpg">
+    		<img src="img/10.jpg">
+    		<img src="img/11.jpg">
+    		<img src="img/12.jpg">
+    		<img src="img/13.jpg">
+    		<img src="img/14.jpg">
+    		<img src="img/15.jpg">
+    		<img src="img/16.jpg">
+    		<img src="img/17.jpg">
+    		<img src="img/18.jpg">
+    		<img src="img/19.jpg">
+    		<img src="img/20.jpg">
+      		<a href="#" class="slidesjs-previous slidesjs-navigation"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+      		<a href="#" class="slidesjs-next slidesjs-navigation"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
 		</div>
 	</section>
 
 	<section class="bg second">
-		<h2>Lorem ipsum Proident Ut ut eu qui esse et proident nostrud proident tempor.</h2>
+		<h2>...tinha que acontecer</h2>
 	</section>
 
 	<section class="contact" id="contact">
@@ -102,10 +286,6 @@
 					<div class="form-input">
                 		<i class="fa fa-user fa-fw fa-2x"></i>
                 		<input class="input" name="txtNome" type="text" placeholder="Nome" required="required">
-                	</div>
-                	<div class="form-input">
-                		<i class="fa fa-pencil-square-o fa-fw fa-2x" aria-hidden="true"></i>
-                		<input class="input" name="txtAssunto" type="text" placeholder="Assunto" required="required">
                 	</div>
                 	<div class="form-input">
                 		<i class="fa fa-envelope-o fa-fw fa-2x"></i>
@@ -126,9 +306,8 @@
 	</section>
 
 	<footer>
-		<span>Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://github.com/gstvribs" class="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> gstvribs</a></span>
+		<span>Créditos: <a href="https://github.com/gstvribs" class="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> gstvribs</a>/<a href="https://github.com/tiagocsilva" class="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> tiagocsilva</a></span>
 	</footer>
-
 
 	<!-- Maps -->
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADF7Xafh-11NhnEJcOIy87JgTEpKgjOno&callback=initMap">
@@ -151,5 +330,39 @@
 	  });
 	});   		
 	</script>
+
+	<!-- Slider -->
+	<script>
+     $(function(){
+      $("#slides").slidesjs({
+        width: 940,
+        height: 528,
+        navigation: false,
+        play: {
+          active: true,
+          auto: true,
+          interval: 4000,
+          swap: true
+        }
+      });
+    });
+  </script>
+
+  <script>
+   /*  $(function(){
+      $(".peca").slidesjs({
+        width: 940,
+        height: 528,
+        navigation: false,
+        play: {
+          active: true,
+          auto: true,
+          interval: 4000,
+          swap: true
+        }
+      });
+    });*/
+  </script>
+
 </body>
 </html>

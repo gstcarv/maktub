@@ -5,7 +5,8 @@ body {
   body h1 {
     font-weight: 700; }
   body h2 {
-    font-weight: 400; }
+    font-weight: 400;
+    font-size: 1.2em; }
   body a {
     text-decoration: none; }
   body i:hover {
@@ -37,7 +38,7 @@ header {
   header h1 {
     font-size: 2.9em; }
   header h5 {
-    font-size: 1.1em; }
+    font-size: 1.2em; }
   header video {
     position: fixed;
     top: 50%;
@@ -108,14 +109,30 @@ header {
 .team {
   color: #795548;
   background-color: #F5F5F5;
-  padding-bottom: 3%; }
-  .team div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
-    .team div img {
-      width: 70%; }
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .team #slides {
+    display: none; }
+    .team #slides img {
+      max-width: 100%; }
+  .team #slides .slidesjs-navigation {
+    margin-top: 3px; }
+  .team #slides .slidesjs-previous {
+    margin-right: 5px;
+    float: left; }
+  .team #slides .slidesjs-next {
+    margin-right: 5px;
+    float: left; }
+  .team .slidesjs-pagination {
+    display: none; }
+  .team #slides a:link,
+  .team #slides a:visited {
+    color: #333; }
+  .team #slides a:hover,
+  .team #slides a:active {
+    color: #9e2020; }
 
 .contact {
   background-color: #F5F5F5; }
@@ -146,14 +163,10 @@ footer {
     color: #A1887F;
     transition: all 0.3s ease; }
 
-@media all and (max-width: 800px) {
-  .team {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; } }
+/* Menu Responsivo */
 @media all and (max-width: 600px) {
   ul {
+    display: flex;
     flex-direction: column;
     align-items: center;
     flex-grow: 1;
@@ -161,5 +174,28 @@ footer {
 
   .bg {
     padding: 4%; } }
+
+
+.peca {
+   display: none; 
+}
+.peca img {
+   max-width: 100%; 
+}
+ .peca .slidesjs-navigation {
+    margin-top: 3px; }
+ .peca .slidesjs-previous {
+    margin-right: 5px;
+    float: left; }
+ .peca .slidesjs-next {
+    margin-right: 5px;
+    float: left; }
+ .slidesjs-pagination {
+    display: none; }
+ .peca a:link, .peca a:visited {
+    color: #333; }
+ .peca a:hover, .peca a:active {
+    color: #9e2020; }
+
 
 /*# sourceMappingURL=style.css.map */
