@@ -5,7 +5,8 @@ body {
   body h1 {
     font-weight: 700; }
   body h2 {
-    font-weight: 400; }
+    font-weight: 400;
+    font-size: 1.2em; }
   body a {
     text-decoration: none; }
   body i:hover {
@@ -37,7 +38,7 @@ header {
   header h1 {
     font-size: 2.9em; }
   header h5 {
-    font-size: 1.1em; }
+    font-size: 1.2em; }
   header video {
     position: fixed;
     top: 50%;
@@ -125,26 +126,7 @@ header {
     margin-right: 5px;
     float: left; }
   .team .slidesjs-pagination {
-    margin: 6px 0 0;
-    float: right;
-    list-style: none; }
-  .team .slidesjs-pagination li {
-    float: left;
-    margin: 0 1px; }
-  .team .slidesjs-pagination li a {
-    display: block;
-    width: 13px;
-    height: 0;
-    padding-top: 13px;
-    background-image: url(img/pagination.png);
-    background-position: 0 0;
-    float: left;
-    overflow: hidden; }
-  .team .slidesjs-pagination li a.active,
-  .team .slidesjs-pagination li a:hover.active {
-    background-position: 0 -13px; }
-  .team .slidesjs-pagination li a:hover {
-    background-position: 0 -26px; }
+    display: none; }
   .team #slides a:link,
   .team #slides a:visited {
     color: #333; }

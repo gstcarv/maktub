@@ -1,6 +1,6 @@
 $fonte: 'Ubuntu', sans-serif;
 $sizeHeader: 2.9em;
-$sizeCorpo: 1.1em;
+$sizeCorpo: 1.2em;
 $weiHeader: 700;
 $weiCorpo: 400;
 $corBackground: #F5F5F5;
@@ -16,6 +16,7 @@ body{
 	}
 	h2{
 		font-weight: $weiCorpo;
+		font-size: $sizeCorpo;
 	}
 	a{
 		text-decoration: none;
@@ -164,34 +165,7 @@ header{
     }
 
     .slidesjs-pagination {
-      margin: 6px 0 0;
-      float: right;
-      list-style: none;
-    }
-
-    .slidesjs-pagination li {
-      float: left;
-      margin: 0 1px;
-    }
-
-    .slidesjs-pagination li a {
-      display: block;
-      width: 13px;
-      height: 0;
-      padding-top: 13px;
-      background-image: url(img/pagination.png);
-      background-position: 0 0;
-      float: left;
-      overflow: hidden;
-    }
-
-    .slidesjs-pagination li a.active,
-    .slidesjs-pagination li a:hover.active {
-      background-position: 0 -13px
-    }
-
-    .slidesjs-pagination li a:hover {
-      background-position: 0 -26px
+    	display: none;
     }
 
     #slides a:link,
