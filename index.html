@@ -33,6 +33,7 @@
 	<!-- Slider -->
 	<script src="js/jquery.slides.min.js"></script>
 
+	<!-- JS Para carregar fotos de cada peça teatral !-->
 	<script type="text/javascript">
 		function pecas(peca) {
 			document.getElementById("primeiraPeca").style.display = "none";
@@ -116,7 +117,7 @@
 	<header>
   		<div class="videoContainer">
   			<video autoplay loop>
-    			<source src="video/v2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+    			<source src="video/MAKTUB-VIDEO.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
     			Video not supported.
   			</video>
 		</div>
@@ -125,13 +126,13 @@
 		<nav>
 			<ul>
 				<li><a href="#about">Sobre Nós</a></li>
-				<li><a href="#team">Fotos</a></li>
+				<li><a href="#team">Equipe</a></li>
 				<li><a href="#contact">Contato</a></li>
 			</ul>
 		</nav>
 		<div class="title">
 			<h1>Cia Teatral Maktub</h1>
-			<h2>Breve Descrição...</h2>
+			<h2>Sumaré/SP</h2>
 			<a href="#about"><i class="fa fa-angle-double-down fa-fw fa-4x" aria-hidden="true"></i></a>
 		</div>
 	</header>
@@ -243,35 +244,124 @@
 					</table>
 			</div>
 		</div>
-		<hr>
+	</section>
+
+	<section class="bg first">
+		<h2>MAKTUB</h2>
 	</section>
 
 	<section class="team" id="team">
-		<h1>Fotos</h1>
-		<div class="grid grid-pad" id="slides">
-			<img src="img/1.jpg">
-    		<img src="img/2.jpg">
-    		<img src="img/3.jpg">
-    		<img src="img/4.jpg">
-    		<img src="img/5.jpg">
-    		<img src="img/6.jpg">
-    		<img src="img/7.jpg">
-    		<img src="img/8.jpg">
-    		<img src="img/9.jpg">
-    		<img src="img/10.jpg">
-    		<img src="img/11.jpg">
-    		<img src="img/12.jpg">
-    		<img src="img/13.jpg">
-    		<img src="img/14.jpg">
-    		<img src="img/15.jpg">
-    		<img src="img/16.jpg">
-    		<img src="img/17.jpg">
-    		<img src="img/18.jpg">
-    		<img src="img/19.jpg">
-    		<img src="img/20.jpg">
-      		<a href="#" class="slidesjs-previous slidesjs-navigation"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
-      		<a href="#" class="slidesjs-next slidesjs-navigation"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-		</div>
+		<h1>Equipe</h1>
+		<table id="tblEquipe">
+			<tr>
+				<td colspan="4">
+					<img src="img/EQUIPE/DIRETOR.jpg" class="teamPhoto">
+					<br>
+					<span class="teamName">
+						Noilson Pereira
+						<br>
+						Diretor
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="img/EQUIPE/AT1.jpg" class="teamPhoto">
+					<br>
+					<span class="teamName">
+						Ana Pereira
+						<br>
+						Atriz
+					</span>
+				</td>
+				<td>
+					<img src="img/EQUIPE/AT2.jpg" class="teamPhoto">
+					<br>
+					<span class="teamName">
+						Antônia Maria da Câmara
+						<br>
+						Atriz
+					</span>
+				</td>
+				<td>
+					<img src="img/EQUIPE/AT3.jpg" class="teamPhoto">
+					<br>
+					<span class="teamName">
+						Ney Neves
+						<br>
+						Ator
+					</span>
+				</td>
+				<td>
+					<img src="img/EQUIPE/AT4.jpg" class="teamPhoto">
+					<br>
+					<span class="teamName">
+						Helena Prates
+						<br>
+						Atriz
+					</span>
+				</td>
+
+			</tr>
+			<tr>
+				<td>
+					<img src="img/EQUIPE/AT5.jpg" class="teamPhoto">
+					<br>
+					<span class="teamName">
+						Antônio Daniel do Carmo
+						<br>
+						Ator
+					</span>
+				</td>
+				<td>
+					<img src="img/EQUIPE/AT6.jpg" class="teamPhoto">
+					<br>
+					<span class="teamName">
+						Gustavo André Freire
+						<br>
+						Ator
+					</span>
+				</td>
+				<td>
+					<img src="img/EQUIPE/AT7.jpg" class="teamPhoto">
+					<br>
+					<span class="teamName">
+						Gabryela Souza
+						<br>
+						Atriz
+					</span>
+				</td>
+				<td>
+					<img src="img/EQUIPE/AT8.jpg" class="teamPhoto">
+					<br>
+					<span class="teamName">
+						Sandy Miranda
+						<br>
+						Atriz
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<img src="img/EQUIPE/AT9.jpg" class="teamPhoto">
+					<br>
+					<span class="teamName">
+						Luiza Lopes
+						<br>
+						Atriz
+					</span>
+				</td>
+				<td colspan="2">
+					<img src="img/EQUIPE/AT10.jpg" class="teamPhoto">
+					<br>
+					<span class="teamName">
+						Eric Ferreira
+						<br>
+						Ator
+					</span>
+				</td>
+			</tr>
+		</table>
 	</section>
 
 	<section class="bg second">
@@ -306,7 +396,7 @@
 	</section>
 
 	<footer>
-		<span>Créditos: <a href="https://github.com/gstvribs" class="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> gstvribs</a>/<a href="https://github.com/tiagocsilva" class="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> tiagocsilva</a></span>
+		<span>Créditos: <a href="https://github.com/gstvribs" class="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> gstvribs</a>/<a href="https://tiagocsilva.github.io" class="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> tiagocsilva</a></span>
 	</footer>
 
 	<!-- Maps -->
@@ -330,39 +420,5 @@
 	  });
 	});   		
 	</script>
-
-	<!-- Slider -->
-	<script>
-     $(function(){
-      $("#slides").slidesjs({
-        width: 940,
-        height: 528,
-        navigation: false,
-        play: {
-          active: true,
-          auto: true,
-          interval: 4000,
-          swap: true
-        }
-      });
-    });
-  </script>
-
-  <script>
-   /*  $(function(){
-      $(".peca").slidesjs({
-        width: 940,
-        height: 528,
-        navigation: false,
-        play: {
-          active: true,
-          auto: true,
-          interval: 4000,
-          swap: true
-        }
-      });
-    });*/
-  </script>
-
 </body>
 </html>

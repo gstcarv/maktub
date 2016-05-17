@@ -175,6 +175,7 @@ footer {
   .bg {
     padding: 4%; } }
 
+/* BOLACHA COMEÇOU A EDITAR O CSS A PARTIR DESSE PONTO :) */
 
 .peca {
    display: none; 
@@ -197,5 +198,27 @@ footer {
  .peca a:hover, .peca a:active {
     color: #9e2020; }
 
+#tblEquipe {
+  border: none;
+  text-align: center;
+}
+
+#tblEquipe td {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.teamPhoto {
+    width: 150px;
+    height: 150px;
+    border: solid 5px;
+    border-radius: 50%;
+}
+
+.teamName {
+  font-weight: bold
+}
 
 /*# sourceMappingURL=style.css.map */
