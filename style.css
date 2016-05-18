@@ -106,6 +106,9 @@ header {
 .second {
   background: url(./img/bg1.jpg) no-repeat center fixed; }
 
+.three {
+  background: url(./img/bg3.jpg) no-repeat center;}
+
 .team {
   color: #795548;
   background-color: #F5F5F5;
@@ -198,27 +201,32 @@ footer {
  .peca a:hover, .peca a:active {
     color: #9e2020; }
 
-#tblEquipe {
-  border: none;
-  text-align: center;
-}
-
-#tblEquipe td {
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
 .teamPhoto {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     border: solid 5px;
     border-radius: 50%;
 }
 
 .teamName {
-  font-weight: bold
+  font-weight: bold;
 }
+
+.teamContent {
+  text-align: center;
+}
+
+.namePeca {
+  font-weight: bold;
+}
+
+#fotosPecas {
+  text-align: center;
+}
+
+#namePecas ul, #namePecas li{
+  width: 100%;
+}
+
 
 /*# sourceMappingURL=style.css.map */
