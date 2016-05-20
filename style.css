@@ -97,8 +97,10 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 250px;
-  color: #fff; }
+  height: 250px; }
+  .bg h2 {
+    font-size: 1.5em;
+    color: #fff; }
 
 .first {
   background: url(./img/bg.jpg) no-repeat center; }
@@ -106,33 +108,76 @@ header {
 .second {
   background: url(./img/bg1.jpg) no-repeat center fixed; }
 
+.third {
+  background: url(./img/bg2.jpg) no-repeat center; }
+
+.pecas {
+  position: relative;
+  width: 100%;
+  color: #795548;
+  background-color: #F5F5F5;
+  padding-bottom: 3%; }
+  .pecas .peca {
+    display: none; }
+    .pecas .peca img {
+      max-width: 100%; }
+  .pecas .peca .slidesjs-navigation {
+    margin-top: 3px; }
+  .pecas .peca .slidesjs-previous {
+    margin-right: 5px;
+    float: left; }
+  .pecas .peca .slidesjs-next {
+    margin-right: 5px;
+    float: left; }
+  .pecas .slidesjs-pagination {
+    display: none; }
+  .pecas .peca a:link, .pecas .peca a:visited {
+    color: #333; }
+  .pecas .peca a:hover, .pecas .peca a:active {
+    color: #9e2020; }
+  .pecas .fotosPecas {
+    text-align: center; }
+  .pecas .namePeca {
+    font-size: 1.7em;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 25%; }
+  .pecas #namePecas ul, .pecas #namePecas li {
+    width: 100%; }
+  .pecas ul {
+    list-style: none;
+    padding: 0; }
+    .pecas ul li {
+      padding: 3px;
+      text-decoration: none; }
+      .pecas ul li a {
+        color: #795548; }
+        .pecas ul li a:hover {
+          text-decoration: underline; }
+
 .team {
   color: #795548;
   background-color: #F5F5F5;
-  padding: 2%;
+  padding-bottom: 2%;
   display: flex;
-  align-items: center;
+  justify-content: flex-center;
   flex-direction: column; }
-  .team #slides {
-    display: none; }
-    .team #slides img {
-      max-width: 100%; }
-  .team #slides .slidesjs-navigation {
-    margin-top: 3px; }
-  .team #slides .slidesjs-previous {
-    margin-right: 5px;
-    float: left; }
-  .team #slides .slidesjs-next {
-    margin-right: 5px;
-    float: left; }
-  .team .slidesjs-pagination {
-    display: none; }
-  .team #slides a:link,
-  .team #slides a:visited {
-    color: #333; }
-  .team #slides a:hover,
-  .team #slides a:active {
-    color: #9e2020; }
+  .team h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.7em; }
+  .team .teamContent {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .team .teamContent .teamName {
+      font-weight: bold;
+      padding: 10px; }
+    .team .teamContent img {
+      width: 130px;
+      height: 130px;
+      border: solid 4px;
+      border-radius: 50%; }
 
 .contact {
   background-color: #F5F5F5; }
@@ -157,8 +202,10 @@ footer {
   background-color: #F5F5F5; }
   footer span {
     color: #795548; }
-  footer a:visited {
+  footer a {
     color: #3E2723; }
+    footer a:hover {
+      text-decoration: underline; }
   footer i:hover {
     color: #A1887F;
     transition: all 0.3s ease; }
@@ -173,6 +220,9 @@ footer {
     width: 100px; }
 
   .bg {
-    padding: 4%; } }
+    padding: 4%; }
+
+  #namePecas {
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */

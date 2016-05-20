@@ -126,7 +126,10 @@ header{
     align-items: center;
 	width: 100%;
 	height: 250px;
-	color: #fff;
+	h2{
+		font-size: 1.5em;
+		color: #fff;
+	}
 }
 .first{
 	background: url(./img/bg.jpg) no-repeat center;
@@ -134,49 +137,103 @@ header{
 .second{
 	background: url(./img/bg1.jpg) no-repeat center fixed;
 }
+.third{
+	background: url(./img/bg2.jpg) no-repeat center;
+}
+
+.pecas{
+	position: relative;
+	width: 100%;
+	color: $corTitleSection;
+	background-color: $corBackground;
+	padding-bottom: 3%;
+
+	.peca{
+   		display: none; 
+   		img{
+   			max-width: 100%; 
+   		}
+	}
+
+	.peca .slidesjs-navigation {
+    	margin-top: 3px; 
+	}
+	.peca .slidesjs-previous {
+    	margin-right: 5px;
+    	float: left; 
+	}
+	.peca .slidesjs-next {
+    	margin-right: 5px;
+    	float: left; 
+	}
+	.slidesjs-pagination {
+    	display: none; 
+	}
+	.peca a:link, .peca a:visited {
+    	color: #333; 
+	}
+	.peca a:hover, .peca a:active {
+    	color: #9e2020; 
+	}
+	.fotosPecas{
+		text-align: center;
+	}
+
+	.namePeca {
+		font-size: 1.7em;
+		text-align: center;
+  		font-weight: bold;
+  		padding-top: 25%;
+	}
+
+	#namePecas ul, #namePecas li{
+  		width: 100%;
+	}
+
+	ul{
+		list-style: none;
+		padding: 0;
+		li{
+			padding: 3px;
+			text-decoration: none;
+			a{
+				color: $corTitleSection;
+
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
 
 .team{
 	color: $corTitleSection;
 	background-color: $corBackground;
-	padding: 2%;
+	padding-bottom: 2%;
 	display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    #slides {
-      display: none;
-      img{
-      	max-width: 100%;
-      }
-    }
-
-    #slides .slidesjs-navigation {
-      margin-top:3px;
-    }
-
-    #slides .slidesjs-previous {
-      margin-right: 5px;
-      float: left;
-    }
-
-    #slides .slidesjs-next {
-      margin-right: 5px;
-      float: left;
-    }
-
-    .slidesjs-pagination {
-    	display: none;
-    }
-
-    #slides a:link,
-    #slides a:visited {
-      color: #333
-    }
-
-    #slides a:hover,
-    #slides a:active {
-      color: #9e2020
-    }
+	justify-content: flex-center;
+	flex-direction: column;
+	h2{
+		text-align: center;
+		font-weight: 700;
+		font-size: 1.7em;
+	}
+	.teamContent{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		.teamName {
+  			font-weight: bold;
+  			padding: 10px;
+		}
+		img{
+    		width: 130px;
+    		height: 130px;
+    		border: solid 4px;
+    		border-radius: 50%;		
+    	}
+	}
 }
 
 .contact{
@@ -211,8 +268,12 @@ footer{
 	span{
 		color: $corTitleSection;
 	}
-	a:visited{
+	a{
 		color: #3E2723;
+
+		&:hover{
+			text-decoration: underline;
+		}
 	}
 	i:hover{
 		color: #A1887F;
@@ -232,4 +293,8 @@ footer{
 	.bg{
 		padding: 4%;
 	}
+	#namePecas{
+  		text-align: center;
+	}
+
 }

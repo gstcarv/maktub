@@ -21,7 +21,7 @@
 	<script type="text/javascript" src="js/map.js"></script>
 
 	<!-- Font -->
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700,500">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700">
 
 	<!-- Font Awesome Icons -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
@@ -31,6 +31,9 @@
 
 	<!-- Slider -->
 	<script src="js/jquery.slides.min.js"></script>
+
+	<!-- Slider Controller -->
+	<script src="js/slidercontrol.js"></script>
 
 </head>
 <body>
@@ -47,13 +50,14 @@
 		<nav>
 			<ul>
 				<li><a href="#about">Sobre Nós</a></li>
-				<li><a href="#team">Fotos</a></li>
+				<li><a href="#pecas">Peças</a></li>
+				<li><a href="#team">Equipe</a></li>
 				<li><a href="#contact">Contato</a></li>
 			</ul>
 		</nav>
 		<div class="title">
 			<h1>Cia Teatral Maktub</h1>
-			<h2>Breve Descrição...</h2>
+			<h2>Sumaré-SP</h2>
 			<a href="#about"><i class="fa fa-angle-double-down fa-fw fa-4x" aria-hidden="true"></i></a>
 		</div>
 	</header>
@@ -75,35 +79,233 @@
 		<h2>Já estava escrito...</h2>
 	</section>
 
-	<section class="team" id="team">
-		<h1>Fotos</h1>
-		<div class="grid grid-pad" id="slides">
-			<img src="img/1.jpg">
-    		<img src="img/2.jpg">
-    		<img src="img/3.jpg">
-    		<img src="img/4.jpg">
-    		<img src="img/5.jpg">
-    		<img src="img/6.jpg">
-    		<img src="img/7.jpg">
-    		<img src="img/8.jpg">
-    		<img src="img/9.jpg">
-    		<img src="img/10.jpg">
-    		<img src="img/11.jpg">
-    		<img src="img/12.jpg">
-    		<img src="img/13.jpg">
-    		<img src="img/14.jpg">
-    		<img src="img/15.jpg">
-    		<img src="img/16.jpg">
-    		<img src="img/17.jpg">
-    		<img src="img/18.jpg">
-    		<img src="img/19.jpg">
-    		<img src="img/20.jpg">
-      		<a href="#" class="slidesjs-previous slidesjs-navigation"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
-      		<a href="#" class="slidesjs-next slidesjs-navigation"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-		</div>
+	<section class="pecas" id="pecas">  
+    	<div class="grid grid-pad">
+      		<div class="col-1-2" id="namePecas">
+      			<h1>Peças</h1>
+        		<ul class="pecas-list">
+          			<li><a href="javascript:pecas(1)">Luar em Qualquer Cidade</a></li> 
+          			<li><a href="javascript:pecas(2)">Uma Lição Longe Demais</a></li>
+          			<li><a href="javascript:pecas(3)">O Grilo e o Vagalume</a></li>
+          			<li><a href="javascript:pecas(4)">Auscwitz</a></li>
+          			<li><a href="javascript:pecas(5)">Rua da Amargura</a></li>
+          			<li><a href="javascript:pecas(6)">O Doce Amargo</a></li>
+          			<li><a href="javascript:pecas(7)">Coração Brejeiro</a></li>
+         	 		<li><a href="javascript:pecas(8)">Orquídea Negra</a></li>
+          			<li><a href="javascript:pecas(9)">Casa Mágica</a></li>
+          			<li><a href="javascript:pecas(10)">Homem é tudo igual</a></li>
+        		</ul>
+      		</div>
+      		<div class="col-1-2 fotosPecas">
+
+        		<div id="peca1">  
+          			<div class="peca" id="pec1">
+          			<span class="namePeca">Luar em Qualquer Cidade</span>
+            			<img src="img/PRIMEIRA-PECA/1.jpg">
+              			<img src="img/PRIMEIRA-PECA/2.jpg">
+            			<img src="img/PRIMEIRA-PECA/3.jpg">
+            			<img src="img/PRIMEIRA-PECA/4.jpg">
+            			<img src="img/PRIMEIRA-PECA/5.jpg">
+            			<img src="img/PRIMEIRA-PECA/6.jpg">
+            			<img src="img/PRIMEIRA-PECA/7.jpg">
+            			<img src="img/PRIMEIRA-PECA/8.jpg">
+            			<img src="img/PRIMEIRA-PECA/9.jpg">
+            			<img src="img/PRIMEIRA-PECA/10.jpg">
+            			<img src="img/PRIMEIRA-PECA/11.jpg">
+            			<img src="img/PRIMEIRA-PECA/12.jpg">
+            			<img src="img/PRIMEIRA-PECA/13.jpg">
+            			<img src="img/PRIMEIRA-PECA/14.jpg">
+          			</div>
+        		</div>
+
+        		<div id="peca2">  
+          			<div class="peca" id="pec2">
+          				<span class="namePeca">Uma Lição Longe Demais</span>
+              			<img src="img/SEGUNDA-PECA/1.jpg">
+              			<img src="img/SEGUNDA-PECA/2.jpg">
+              			<img src="img/SEGUNDA-PECA/3.jpg">
+             			<img src="img/SEGUNDA-PECA/4.jpg">
+              			<img src="img/SEGUNDA-PECA/5.jpg">
+              			<img src="img/SEGUNDA-PECA/6.jpg">
+              			<img src="img/SEGUNDA-PECA/7.jpg">
+              			<img src="img/SEGUNDA-PECA/8.jpg">
+              			<img src="img/SEGUNDA-PECA/9.jpg">
+              			<img src="img/SEGUNDA-PECA/10.png">
+           	 		</div>
+          		</div>
+
+          		<div id="peca3">
+          			<div class="peca" id="pec3">
+          			    <span class="namePeca">O Grilo e o Vagalume</span> 
+            			<img src="img/TERCEIRA-PECA/1.jpg">
+            			<img src="img/TERCEIRA-PECA/2.png">
+              			<img src="img/TERCEIRA-PECA/3.jpg">
+            		</div>
+          		</div>
+          		
+          		<div id="peca4"> 
+          			<div class="peca" id="pec4">
+          				<span class="namePeca">Auscwitz</span>
+            			<img src="img/QUARTA-PECA/1.jpg">
+              			<img src="img/QUARTA-PECA/2.jpg">
+            		</div>
+          		</div>
+
+      		</div><!-- end column slider -->
+    	</div><!-- end grid -->
+  	</section><!-- end section pecas -->
+
+  	<script type="text/javascript">
+  		$(".fotosPecas").hide();
+  	</script>
+
+  	<section class="bg second">
+		<h2>Maktub</h2>
 	</section>
 
-	<section class="bg second">
+	<section class="team" id="team">
+      	<div class="grid grid-pad">
+      		<h2>Equipe</h2>
+        	<div class="col 1-1">
+          		<div class="teamContent">
+            		<img src="img/EQUIPE/DIRETOR.jpg">
+            		<span class="teamName">
+              			Noilson Pereira
+            		</span>
+            		<span class="teamFunc">
+            			Diretor
+            		</span>
+          		</div>
+        	</div>
+      	</div>
+
+      	<div class="grid grid-pad">
+          	<div class="col-1-5">
+            	<div class="teamContent">
+              		<img src="img/EQUIPE/AT1.jpg">
+            		<span class="teamName">
+            			Ana Pereira
+            		</span> 
+            		<span class="teamFunc">
+            			Atriz
+            		</span>  
+          		</div>        
+          	</div>
+
+          	<div class="col-1-5">
+            	<div class="teamContent">
+              		<img src="img/EQUIPE/AT2.jpg">
+            		<span class="teamName">
+              			Antônia Maria da Câmara
+            		</span>
+            		<span class="teamFunc">
+            			Atriz
+            		</span>   
+          		</div>                      
+          	</div>
+          
+          	<div class="col-1-5">
+              	<div class="teamContent">
+                	<img src="img/EQUIPE/AT3.jpg">
+            		<span class="teamName">
+              			Helena Prates
+            		</span>
+            		<span>
+            			Atriz
+            		</span>
+              	</div>                
+          	</div>
+          
+          	<div class="col-1-5">
+              	<div class="teamContent">
+                	<img src="img/EQUIPE/AT4.jpg">
+          			<span class="teamName">
+            			Ney Neves
+          			</span>
+          			<span>
+          				Ator
+          			</span>
+              	</div>                
+          	</div>
+
+          	<div class="col-1-5">
+            	<div class="teamContent">
+              		<img src="img/EQUIPE/AT5.jpg">
+            		<span class="teamName">
+              			Antônio Daniel do Carmo
+            		</span>
+            		<span>
+            			Ator
+            		</span>
+          		</div>        
+          	</div>
+     	</div>
+
+      	<div class="grid grid-pad">
+          	<div class="col-1-5">
+            	<div class="teamContent">
+              		<img src="img/EQUIPE/AT6.jpg">
+            		<span class="teamName">
+              			Gustavo André Freire
+            		</span>
+            		<span>
+            			Ator
+            		</span>
+          		</div>                      
+          	</div>
+          	
+          	<div class="col-1-5">
+              	<div class="teamContent">
+                	<img src="img/EQUIPE/AT7.jpg">
+            		<span class="teamName">
+             			Gabryela Souza
+            		</span>
+            		<span>
+            			Atriz
+            		</span>
+              	</div>                
+          	</div>
+          	
+          	<div class="col-1-5">
+              	<div class="teamContent">
+                	<img src="img/EQUIPE/AT8.jpg">
+            		<span class="teamName">
+              			Sandy Miranda
+            		</span>
+            		<span>
+            			Atriz
+            		</span>
+              </div>                
+          	</div>
+          	
+          	<div class="col-1-5">
+            	<div class="teamContent">
+              		<img src="img/EQUIPE/AT9.jpg">
+            		<span class="teamName">
+              			Luiza Lopes
+            		</span>
+            		<span>
+            			Atriz
+            		</span>
+          		</div>        
+          	</div>
+          	
+          	<div class="col-1-5">
+            	<div class="teamContent">
+              		<img src="img/EQUIPE/AT10.jpg">
+            		<span class="teamName">
+              			Eric Ferreira
+            		</span>
+            		<span>
+            			Ator
+            		</span>
+          		</div>                      
+          	</div>
+
+      	</div>
+  	</section>
+
+	<section class="bg third">
 		<h2>...tinha que acontecer</h2>
 	</section>
 
@@ -162,20 +364,11 @@
 
 	<!-- Slider -->
 	<script>
-     $(function(){
-      $("#slides").slidesjs({
-        width: 940,
-        height: 528,
-        navigation: false,
-        play: {
-          active: true,
-          auto: true,
-          interval: 4000,
-          swap: true
-        }
-      });
-    });
-  </script>
+	$( document ).ready(function() {
+    	$('#namePeca').hide();
+	});
+		
+  	</script>
 
 </body>
 </html>
