@@ -16,7 +16,7 @@ function pecas(peca) {
       height: 528,
       navigation: false,
       play: {
-        active: true,
+        active: false,
         auto: true,
         interval: 4000,
         swap: true
