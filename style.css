@@ -63,6 +63,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     padding: 4%; }
   header nav {
     display: flex;
@@ -80,6 +81,10 @@ header {
         color: #fff; }
         header nav ul a:hover {
           color: rgba(255, 255, 255, 0.7); }
+
+#socialIcons i {
+    padding: 5px;  
+}
 
 .about {
   position: relative;
@@ -218,6 +223,15 @@ footer {
     align-items: center;
     flex-grow: 1;
     width: 100px; }
+
+     header video {
+        display: none;
+     }
+
+     header {
+        background-image: url("img/fundo.jpg");
+        background-size: cover;  
+     }
 
   .bg {
     padding: 4%; }
