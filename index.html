@@ -38,10 +38,16 @@
 	<!-- Slider Controller -->
 	<script src="js/slidercontrol.js"></script>
 
+  <!--Menu Responsivo Controller -->
+  <script src="js/menuController.js"></script>
+
+  <!-- Scroll Controller -->
+  <script src="js/scrollController.js"></script>
+
 </head>
 <body>
 
-	<header>
+	<header id="top">
   		<div class="videoContainer">
   			<video autoplay loop>
     			<source src="video/v2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
@@ -50,7 +56,12 @@
 		</div>
 
 		<a href="#" class="logo"></a>
-		<nav>
+    
+    <a href="javascript:openMenu()" id="menuOpen"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+    <a href="javascript:closeMenu()" id="menuClose"><i class="fa fa-times fa-2x" aria-hidden="true"></i></a>
+
+
+    <nav>
 			<ul>
 				<li><a href="#about">Sobre Nós</a></li>
 				<li><a href="#pecas">Peças</a></li>
@@ -418,6 +429,8 @@
 	</section>
 
 	<footer>
+    <a href="#top" id="scrollTop"><i class="fa fa-arrow-circle-o-up fa-4x" aria-hidden="true"></i></a>
+
 		<span>Créditos: <a href="https://github.com/gstvribs" class="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> gstvribs</a>/<a href="https://tiagocsilva.github.io" class="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> tiagocsilva</a></span>
 	</footer>
 
