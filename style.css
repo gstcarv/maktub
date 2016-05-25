@@ -86,6 +86,10 @@ header {
     padding: 5px;  
 }
 
+#menuOpen,#menuClose {
+  display: none;
+}
+
 .about {
   position: relative;
   width: 100%;
@@ -215,6 +219,10 @@ footer {
     color: #A1887F;
     transition: all 0.3s ease; }
 
+     #scrollTop {
+        display: none;      
+      }
+
 /* Menu Responsivo */
 @media all and (max-width: 600px) {
   ul {
@@ -237,6 +245,35 @@ footer {
     padding: 4%; }
 
   #namePecas {
-    text-align: center; } }
+    text-align: center; } 
+
+   #menuOpen,#menuClose {
+     position: absolute;
+     right: 40px;
+     padding-top: 50px;
+    }
+
+    #menuOpen{
+      display: block;
+    }
+    
+    nav ul li {
+     display: none;
+     text-align: center;
+     width: 110%;  
+    }
+
+    #scrollTop {
+     display: none;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      color: #795548;
+      opacity: 0.3;
+      -moz-opacity: 0.3;
+    }
+
+}
+
 
 /*# sourceMappingURL=style.css.map */
