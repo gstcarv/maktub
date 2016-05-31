@@ -78,7 +78,6 @@
 			</div>
 			<a href="#about"><i class="fa fa-angle-double-down fa-fw fa-4x" aria-hidden="true"></i></a>
 		</div>
-		
 	</header>
 	
 	<section class="about" id="about">	
@@ -405,18 +404,18 @@
 		<div class="grid grid-pad">
 			<div class="col-1-2 form">
 				<h1>Contato</h1>
-				<form id="frmContato" type="post" action="enviaContato.php">
+				<form id="frmContato" method="post" action="mailto:companhiateatralmaktub@gmail.com?subject=Contato - SITE" enctype="text/plain">
 					<div class="form-input">
                 		<i class="fa fa-user fa-fw fa-2x"></i>
-                		<input class="input" name="txtNome" type="text" placeholder="Nome" required="required">
+                		<input class="input" name="Nome" type="text" placeholder="Nome" required="required">
                 	</div>
                 	<div class="form-input">
                 		<i class="fa fa-envelope-o fa-fw fa-2x"></i>
-                		<input class="input" name="txtEmail" type="email" placeholder="Email" required="required">
+                		<input class="input" name="Email" type="email" placeholder="Email" required="required">
                 	</div>
                 	<div class="form-input">
                 		<i class="fa fa-pencil fa-fw fa-2x"></i>
-                		<textarea class="input" rows="5" name="txtMsg" type="text" placeholder="Insira sua Mensagem Aqui!" required="required"></textarea>
+                		<textarea class="input" rows="5" name="Mensagem" type="text" placeholder="Insira sua Mensagem Aqui!" required="required"></textarea>
                 	</div>
 
                 	<button class="btn" type="submit">Enviar</button>
@@ -426,6 +425,11 @@
             	<div id="map"></div>
 			</div>
 		</div>
+    <div class="grid grid-pad">
+        <div class="col-1-1" id="ender">
+           Centro Cultural Subesação - Rua Antônio Jorge Chebab, S/N, Centro,Sumaré/SP - companhiateatralmaktub@gmail.com - (019) 992524849
+       </div>
+    </div>
 	</section>
 
 	<footer>

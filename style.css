@@ -223,6 +223,11 @@ footer {
         display: none;      
       }
 
+    #ender {
+       color: #795548;
+       text-align: center;
+    }
+
 /* Menu Responsivo */
 @media all and (max-width: 600px) {
   ul {
