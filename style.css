@@ -53,6 +53,7 @@ header {
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%); }
   header .logo {
+    text-indent: -9999px;
     position: absolute;
     display: flex;
     justify-content: flex-start;
