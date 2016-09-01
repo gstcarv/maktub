@@ -59,10 +59,45 @@
 
   <!-- Scroll Controller -->
   <script src="js/scrollController.js"></script>
+  
+  <!-- JQuery UI -->
+  <script src="js/jquery-ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+  
+  <script>
+  $( function() {
+	var wd = $(window).width();
+	wd = wd*30/100;
+    $( "#destaque" ).dialog({
+		autoOpen: true,
+		width: wd,      
+		show: {
+        effect: "explode",
+        duration: 2000
+      },
+      hide: {
+        effect: "drop",
+        duration: 1000
+      }
+	});
+  } );
+  
+  
+ setTimeout(function(){ modalClose(); }, 10000);
+ 
+ function modalClose() {
+	$("#destaque").dialog("close");
+ }
 
+  </script>
+  
 </head>
 <body>
-
+<div id="destaque">
+  <img src="img/destaque.jpg">
+  <a href="javascript:modalClose()">Fechar</a>
+</div>
+ 
 	<header id="top">
   		<div class="videoContainer">
   			<video autoplay loop>
